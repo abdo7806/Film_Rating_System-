@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>إدارة الأفلام</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">إدارة الأفلام</h1>
+
+
+        <hr>
+        <!-- 📋 نموذج إضافة أو تعديل فيلم -->
+        <form id="movie-form" class="bg-white p-4 rounded shadow-sm mb-5" enctype="multipart/form-data">
+            <input type="hidden" id="movie-id">
+            <!-- يتم تعبئته وقت التعديل -->
+            <div class="mb-3">
+                <label for="title" class="form-label">عنوان الفيلم</label>
+                <input type="text" id="title" class="form-control" placeholder="عنوان الفيلم" required>
+            </div>
+            <div class="mb-3">
+                <label for="genre" class="form-label">النوع</label>
+                <input type="text" id="genre" class="form-control" placeholder="النوع" required>
+            </div>
+            <div class="mb-3">
+                <label for="releaseDate" class="form-label">تاريخ الإصدار</label>
+                <input type="date" id="releaseDate" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="imageUrl" class="form-label">اختار صورة الفيلم</label>
+                <input type="file" id="imageUrl" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">وصف الفيلم</label>
+                <textarea id="description" class="form-control" placeholder="وصف الفيلم" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">حفظ</button>
+        </form>
+
+        <hr>
+
+        <!-- 🗃️ قائمة الأفلام -->
+        <div class="table-responsive">
+            <table id="movies-list" class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>العنوان</th>
+                        <th>النوع</th>
+                        <th>تاريخ الإصدار</th>
+                        <th>الصورة</th>
+                        <th>وصف الفيلم</th>
+                        <th>العمليات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- سيتم ملؤها عبر JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/admin/manage-movies.js"></script>
+</body>
+
+</html>

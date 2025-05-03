@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Film_Rating_System.props" />
+</Project>
