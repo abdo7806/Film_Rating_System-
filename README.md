@@ -37,26 +37,24 @@ A full-stack platform where users can rate movies, while administrators manage m
 
 ---
 
-## 📁 Project Structure | هيكل المشروع
-
----
-
+📁 Project Structure | هيكل المشروع
+```
 Film_Rating_System-/
-├── backend/                  # الواجهة الخلفية
-│   ├── Controllers/          # Web API Controllers
-│   ├── Models/               # Data Models
-│   ├── Services/             # Business Logic
-│   └── Program.cs            # نقطة التشغيل
+├── backend/                          # الواجهة الخلفية
+│   ├── Controllers/                  # Web API Controllers
+│   ├── Models/                       # الطبقات النموذجية
+│   │   ├── DTOs/                     # كائنات نقل البيانات (Data Transfer Objects)
+│   │   └── Repositories/            # مستودعات الوصول للبيانات
+│   ├── Services/                     # منطق الأعمال (Business Logic)
+│   └── Program.cs                    # نقطة التشغيل
 │
-├── frontend/                 # الواجهة الأمامية
+├── frontend/                         # الواجهة الأمامية
 │   ├── index.html
 │   ├── css/
 │   └── js/
 │
-└── README.md                 # ملف التوثيق        
-
----
-
+└── README.md  
+```
 ## 🚀 How to Run | كيفية التشغيل
 
 1. Run the API project in Visual Studio | شغّل مشروع الـ API من Visual Studio  
