@@ -39,17 +39,22 @@ A full-stack platform where users can rate movies, while administrators manage m
 
 ## 📁 Project Structure | هيكل المشروع
 
+---
+
 Film_Rating_System-/
-├── backend/             # الواجهة الخلفية
-│   ├── Controllers/     # المتحكمات
-│   ├── Models/          # النماذج
-│   ├── Data/            # قاعدة البيانات
-│   └── Program.cs       # نقطة التشغيل
-├── frontend/            # الواجهة الأمامية
+├── backend/                  # الواجهة الخلفية
+│   ├── Controllers/          # Web API Controllers
+│   ├── Models/               # Data Models
+│   ├── Services/             # Business Logic
+│   └── Program.cs            # نقطة التشغيل
+│
+├── frontend/                 # الواجهة الأمامية
 │   ├── index.html
 │   ├── css/
 │   └── js/
-└── README.md
+│
+└── README.md                 # ملف التوثيق        
+
 ---
 
 ## 🚀 How to Run | كيفية التشغيل
